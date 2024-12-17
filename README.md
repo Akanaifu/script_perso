@@ -1,5 +1,8 @@
 # SCRIPT PERSO
 
+## Lien de la vidéo 
+https://youtu.be/8e12IY_l5hc
+
 ## Installation
 
 Il suffit de downoald le fichier zip du repositery. Tout le nécessaire se trouve dans le dossier. 
