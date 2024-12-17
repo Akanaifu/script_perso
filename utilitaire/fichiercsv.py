@@ -147,9 +147,6 @@ class FichierCSV:
         """
         Récupère les noms des colonnes d'un fichier CSV.
 
-        Args:
-            chemin_fichier (str): Le chemin du fichier CSV.
-
         Returns:
             list: Une liste contenant les noms des colonnes.
         """
