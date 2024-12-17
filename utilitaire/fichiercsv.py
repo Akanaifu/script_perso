@@ -84,7 +84,9 @@ class FichierCSV:
                         if min_produit <= prix <= max_produit and (
                             categ is None or ligne["Categorie"] == categ
                         ):
-                            print(ligne)
+                            print(
+                                f"{ligne['Categorie']},{ligne['Quantite']},{ligne['Prix unitaire']}"
+                            )
                     except ValueError:
                         print(f"Erreur de conversion dans la ligne : {ligne}")
         except FileNotFoundError:
@@ -94,7 +96,7 @@ class FichierCSV:
         """
         Genère un recapitulatif du stock par categorie.
         """
-        recap = defaultdict(lambda: {"quantite": 0, "valeur_totale": 0.0})
+        recap = {}
 
         try:
             with open(
@@ -106,10 +108,18 @@ class FichierCSV:
                         categorie = ligne["Categorie"]
                         quantite = int(ligne["Quantite"])
                         prix_unitaire = float(ligne["Prix unitaire"])
+
+                        # Initialisation de la catégorie si elle n'existe pas encore
+                        if categorie not in recap:
+                            recap[categorie] = {"quantite": 0, "valeur_totale": 0.0}
+
+                        # Mise à jour des quantités et valeurs
                         recap[categorie]["quantite"] += quantite
                         recap[categorie]["valeur_totale"] += quantite * prix_unitaire
                     except ValueError:
                         print(f"Erreur dans la ligne : {ligne}")
+
+            # Affichage sous forme de tableau
             tableau = [
                 [categorie, donnees["quantite"], f"{donnees['valeur_totale']:.2f} €"]
                 for categorie, donnees in recap.items()
@@ -121,9 +131,10 @@ class FichierCSV:
                     tablefmt="grid",
                 )
             )
-
+            return recap
         except FileNotFoundError:
             print(f"Erreur : Le fichier '{self.chemin_fichier}' est introuvable.")
+            return {}
 
     def afficher_categorie(self):
         """
