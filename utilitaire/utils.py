@@ -49,17 +49,3 @@ def fusion_fichier_csv(dossier_csv, fichier_sortie="fusion.csv"):
     except Exception as e:
         print(f"Une erreur s'est produite : {e}")
         return
-
-
-def recuperer_categorie_fichier(fichier):
-    """
-    Récupère toute la colonne catégorie d'un fichier CSV à partir de son nom.
-    """
-    try:
-        with open(fichier, mode="r", newline="", encoding="utf-8") as entree:
-            reader = csv.DictReader(entree)
-            categorie = [row["categorie"] for row in reader]
-            return categorie
-    except Exception as e:
-        print(f"Une erreur s'est produite : {e}")
-        return []
