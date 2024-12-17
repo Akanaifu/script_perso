@@ -15,11 +15,11 @@ def main():
             fusion_fichier_csv("stockDB")
         if choix == 2:
             liste_csv = os.listdir("stockDB")
-            for idx, liste_csv in enumerate(liste_csv, 1):
-                print(f"{idx}. {liste_csv}")
+            for idx, fichier_csv in enumerate(liste_csv, 1):
+                print(f"{idx}. {fichier_csv}")
             choix_magasin = int(input("Quel magasin choississez-vous ? "))
-            if 0 < choix_magasin <= len(liste_csv):
-                chemin_fichier = f"stockDB/{liste_csv}"
+            if 0 < choix_magasin <= len(liste_csv[choix_magasin - 1]):
+                chemin_fichier = f"stockDB/{liste_csv[choix_magasin - 1]}"
                 magasin = FichierCSV(chemin_fichier)
                 print("Que faire : ")
                 print("1. Afficher le contenu")

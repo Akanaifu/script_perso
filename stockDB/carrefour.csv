@@ -1,4 +1,4 @@
-Nom du produit,Quantité,Prix unitaire,Catégorie
+Nom du produit,Quantite,Prix unitaire,Categorie
 T-shirt,350,15.99,Vêtements hommes
 Jean,200,39.99,Vêtements femmes
 Manteau,120,89.99,Vêtements hommes
@@ -8,14 +8,14 @@ Montre en acier,90,129.99,Bijoux
 Lunettes de soleil,150,49.99,Accessoires
 Baskets de sport,200,69.99,Sport
 Casquette,300,19.99,Vêtements unisexes
-Écharpe en laine,120,25.99,Vêtements hiver
-Haut-parleur Bluetooth,60,39.99,Électronique
-Chargeur rapide USB,180,14.99,Accessoires électroniques
+echarpe en laine,120,25.99,Vêtements hiver
+Haut-parleur Bluetooth,60,39.99,electronique
+Chargeur rapide USB,180,14.99,Accessoires electroniques
 Planche de surf,30,199.99,Sport
 Valise rigide,70,109.99,Voyage
 Tapis de course,15,599.99,Fitness
-Bougie parfumée,200,9.99,Décoration
-Lampe de bureau,140,24.99,Éclairage
+Bougie parfumee,200,9.99,Decoration
+Lampe de bureau,140,24.99,eclairage
 Table basse en bois,50,149.99,Meubles
-Oreiller mémoire de forme,90,39.99,Literie
-Peluche géante,110,34.99,Jouets
+Oreiller memoire de forme,90,39.99,Literie
+Peluche geante,110,34.99,Jouets

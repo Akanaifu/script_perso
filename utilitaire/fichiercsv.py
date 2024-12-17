@@ -9,6 +9,7 @@ class FichierCSV:
         self.fichier = open(chemin_fichier, "r")
 
     def contenu_sans_header(self):
+        print(self.chemin_fichier)
         return self.fichier.readlines()[1:]
 
     def afficher_solde_magasin(self):
@@ -119,13 +120,17 @@ class FichierCSV:
             print(f"Une erreur s'est produite : {e}")
 
     def afficher_categorie(self):
+        liste_categorie = []
         try:
             with open(
                 self.chemin_fichier, mode="r", newline="", encoding="utf-8"
             ) as entree:
                 reader = csv.DictReader(entree)
                 categorie = [row["categorie"] for row in reader]
-                return categorie
+                if categorie not in liste_categorie:
+                    liste_categorie.append(categorie)
+            return liste_categorie
+
         except Exception as e:
             print(f"Une erreur s'est produite : {e}")
             return []
