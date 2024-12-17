@@ -1,56 +1,56 @@
 Nom du produit,Quantite,Prix unitaire,Categorie
-Pates,500,2.99,Produits secs
-Cereales,300,3.49,Petit dejeuner
 Lait,250,1.29,Produits frais
-Fromage,150,4.99,Produits frais
-Jus de fruit,100,2.49,Boissons
-Savon liquide,400,3.99,Hygiène
-Batterie externe,150,19.99,Accessoires electroniques
-Ampoules LED,200,4.5,eclairage
-Cahier A4,350,2.49,Papeterie
-Souris sans fil,120,12.99,Accessoires informatiques
-Bottes de pluie,80,29.99,Vêtements
-Couverts en acier,100,24.99,Cuisine
-Tapis de yoga,60,15.99,Sport
-Livre de recettes,90,9.99,Livres
-Parfum floral,70,39.99,Parfumerie
-T-shirt,350,15.99,Vêtements hommes
-Jean,200,39.99,Vêtements femmes
-Manteau,120,89.99,Vêtements hommes
-Chaussures,150,59.99,Accessoires
-Sac à main,80,79.99,Accessoires
-Montre en acier,90,129.99,Bijoux
-Lunettes de soleil,150,49.99,Accessoires
-Baskets de sport,200,69.99,Sport
-Casquette,300,19.99,Vêtements unisexes
-echarpe en laine,120,25.99,Vêtements hiver
-Haut-parleur Bluetooth,60,39.99,electronique
-Chargeur rapide USB,180,14.99,Accessoires electroniques
-Planche de surf,30,199.99,Sport
 Valise rigide,70,109.99,Voyage
-Tapis de course,15,599.99,Fitness
-Bougie parfumee,200,9.99,Decoration
-Lampe de bureau,140,24.99,eclairage
-Table basse en bois,50,149.99,Meubles
-Oreiller memoire de forme,90,39.99,Literie
-Peluche geante,110,34.99,Jouets
-Televiseur,150,499.99,ecrans
-Ordinateur portable,80,799.99,Ordinateurs
-Casque audio,200,49.99,Accessoires
-Smartphone,120,699.99,Smartphones
-Tablette,60,349.99,Tablettes
-Imprimante multifonction,50,199.99,Imprimantes
-Camera de securite,100,149.99,Domotique
-ecouteurs sans fil,300,59.99,Accessoires
-Drone avec camera,40,399.99,Loisirs electroniques
-Manette de jeu,150,49.99,Accessoires gaming
-Chargeur sans fil,200,19.99,Accessoires electroniques
-Clavier mecanique,120,89.99,Accessoires informatiques
-Carte graphique RTX 4080,25,1299.99,Composants PC
-Souris gamer RGB,180,39.99,Accessoires gaming
-Projecteur HD,70,299.99,ecrans
-Barre de son,90,249.99,Accessoires audio
+Souris sans fil,120,12.99,Accessoires informatiques
+Montre en acier,90,129.99,Bijoux
 Routeur Wi-Fi 6,110,129.99,electronique
-Carte memoire 256 Go,250,34.99,Stockage
+Carte graphique RTX 4080,25,1299.99,Composants PC
+Chargeur rapide USB,180,14.99,Accessoires electroniques
+Table basse en bois,50,149.99,Meubles
+Camera de securite,100,149.99,Domotique
 Disque SSD 1 To,90,149.99,Stockage
+Tapis de yoga,60,15.99,Sport
+T-shirt,350,15.99,Vêtements hommes
+Batterie externe,150,19.99,Accessoires electroniques
+Casquette,300,19.99,Vêtements unisexes
+Chargeur sans fil,200,19.99,Accessoires electroniques
+Planche de surf,30,199.99,Sport
+Imprimante multifonction,50,199.99,Imprimantes
+Jus de fruit,100,2.49,Boissons
+Cahier A4,350,2.49,Papeterie
+Pates,500,2.99,Produits secs
+Couverts en acier,100,24.99,Cuisine
+Lampe de bureau,140,24.99,eclairage
+Barre de son,90,249.99,Accessoires audio
+echarpe en laine,120,25.99,Vêtements hiver
+Bottes de pluie,80,29.99,Vêtements
 Hub USB-C,140,29.99,Accessoires electroniques
+Projecteur HD,70,299.99,ecrans
+Cereales,300,3.49,Petit dejeuner
+Savon liquide,400,3.99,Hygiène
+Peluche geante,110,34.99,Jouets
+Carte memoire 256 Go,250,34.99,Stockage
+Tablette,60,349.99,Tablettes
+Parfum floral,70,39.99,Parfumerie
+Jean,200,39.99,Vêtements femmes
+Haut-parleur Bluetooth,60,39.99,electronique
+Oreiller memoire de forme,90,39.99,Literie
+Souris gamer RGB,180,39.99,Accessoires gaming
+Drone avec camera,40,399.99,Loisirs electroniques
+Ampoules LED,200,4.5,eclairage
+Fromage,150,4.99,Produits frais
+Lunettes de soleil,150,49.99,Accessoires
+Casque audio,200,49.99,Accessoires
+Manette de jeu,150,49.99,Accessoires gaming
+Televiseur,150,499.99,ecrans
+Chaussures,150,59.99,Accessoires
+ecouteurs sans fil,300,59.99,Accessoires
+Tapis de course,15,599.99,Fitness
+Baskets de sport,200,69.99,Sport
+Smartphone,120,699.99,Smartphones
+Sac à main,80,79.99,Accessoires
+Ordinateur portable,80,799.99,Ordinateurs
+Manteau,120,89.99,Vêtements hommes
+Clavier mecanique,120,89.99,Accessoires informatiques
+Livre de recettes,90,9.99,Livres
+Bougie parfumee,200,9.99,Decoration
