@@ -1,12 +1,12 @@
 import unittest
 import os
 import csv
-from fichiercsv import (
-    FichierCSV,
-)  # Assurez-vous que le fichier de classe est nommé fichier_csv.py
+from fichier_csv import FichierCSV
+from io import StringIO
+import sys
 
 
-class TestFichierCSV(unittest.TestCase):
+class TestFichier_CSV(unittest.TestCase):
     def setUp(self):
         """
         Crée un fichier CSV temporaire pour les tests.
@@ -48,9 +48,6 @@ class TestFichierCSV(unittest.TestCase):
         """
         Teste le calcul du solde total du magasin.
         """
-        # Redirection de la sortie pour capturer le print
-        from io import StringIO
-        import sys
 
         output = StringIO()
         sys.stdout = output
@@ -96,8 +93,6 @@ class TestFichierCSV(unittest.TestCase):
         """
         Teste l'affichage des produits dans une fourchette de prix et d'une catégorie.
         """
-        from io import StringIO
-        import sys
 
         output = StringIO()
         sys.stdout = output

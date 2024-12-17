@@ -1,4 +1,4 @@
-from utilitaire.fichiercsv import *
+from utilitaire.fichier_csv import *
 from utilitaire.utils import *
 
 
@@ -52,6 +52,7 @@ def main():
                                 max_souhaite = int(input("Entrez le maximum de tri : "))
                                 print(magasin.afficher_categorie())
                                 categ_shouhaite = input("Entrez la catégorie de tri : ")
+                                print("########################")
                                 magasin.afficher_range_produit(
                                     min_produit=min_souhaite,
                                     max_produit=max_souhaite,
@@ -69,9 +70,7 @@ def main():
                             choix_tri = int(input("Votre choix : "))
 
                             if choix_tri in [1, 2]:
-                                ordre = (
-                                    choix_tri == 2
-                                )  # True pour décroissant, False pour croissant
+                                ordre = choix_tri == 1
                                 listes_noms_colonnes = magasin.recuperer_noms_colonnes()
 
                                 print("Choisissez une colonne pour le tri :")

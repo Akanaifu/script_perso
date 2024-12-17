@@ -1,5 +1,4 @@
 import csv
-from collections import defaultdict
 from tabulate import tabulate
 
 
@@ -51,7 +50,13 @@ class FichierCSV:
             ) as fichier:
                 reader = csv.DictReader(fichier)
                 sorted_data = sorted(
-                    reader, key=lambda row: row[colonne], reverse=not croissant
+                    reader,
+                    key=lambda row: (
+                        float(row[colonne])
+                        if colonne in ["Quantite", "Prix unitaire"]
+                        else (row[colonne])
+                    ),
+                    reverse=not croissant,
                 )
 
             with open(
@@ -148,7 +153,7 @@ class FichierCSV:
             ) as fichier:
                 reader = csv.DictReader(fichier)
                 categories = set(row["Categorie"] for row in reader)
-                print(f"Categories presentes : {', '.join(categories)}")
+                print(f"Categories presentes : {categories}")
                 return list(categories)
         except FileNotFoundError:
             print(f"Erreur : Le fichier '{self.chemin_fichier}' n'a pas ete trouve.")

@@ -26,11 +26,13 @@ def fusion_fichier_csv(dossier_csv, fichier_sortie="fusion.csv"):
     )
 
     # Parcourir chaque fichier CSV dans le dossier
+    chemin_fichier_fusion = os.path.join(dossier_csv, fichier_sortie)
     for fichier in fichiers_csv:
         chemin_fichier = os.path.join(dossier_csv, fichier)
-
         with open(chemin_fichier, mode="r", newline="", encoding="utf-8") as entree:
             reader = csv.DictReader(entree)
+            if chemin_fichier_fusion == chemin_fichier:
+                continue
             for ligne in reader:
                 nom_produit = ligne["Nom du produit"]
                 quantite = int(ligne["Quantite"])
